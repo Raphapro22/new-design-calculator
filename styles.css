@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 400px;
+    background-color: orange;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.display {
+    background-color: #ffffff;
+    color: #2f2d2d;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+    height:100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    color:white;
+    height:500px;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.operations { display: grid;
+    grid-template-columns: repeat(1);
+   
+}
+.operations .btn{
+    background-color: #a5a3a3;
+    border: none;
+    padding: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.numbers .btn  {
+    background-color: #878686;
+    border: none;
+    color:white;
+    font-size:x-large;
+    padding: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.numbers .btn:hover, .operations .btn:hover {
+    background-color: #d0d0d0;
+}
+
+.zero-btn {
+    grid-column: span 2;
+}
+
+.equal-btn {
+    background-color: #f90;
+    color: #fff;
+}
+
+.equal-btn:hover {
+    background-color: #e80;
+}
